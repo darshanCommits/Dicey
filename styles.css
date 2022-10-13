@@ -7,7 +7,6 @@
 .dice {
   text-align: center;
   display: inline-block;
-
 }
 
 body {
@@ -28,9 +27,7 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
-img {
-  width: 80%;
-}
+
 
 footer {
   margin-top: 5%;
@@ -54,7 +51,6 @@ button {
 button:hover {
   background-color: #ff4151;
   color: #393E46;
-  
 }
 
 h4 {
@@ -62,4 +58,33 @@ h4 {
   font-size: 10px;
   font-weight: 200;
   color: rgb(207, 207, 207);
+}
+
+img {
+  width: 80%;
+}
+
+.dice-img {
+  animation: circle-img 0.6s both ease-in-out;
+}
+
+@-webkit-keyframes circle-img {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes circle-img {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
